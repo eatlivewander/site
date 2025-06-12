@@ -34,8 +34,11 @@ export default async function IndexPage() {
           <li key={post._id}>
             <Link
               href={`/${post.slug.current}`}
-              style={{ textDecoration: "none" }}
-              legacyBehavior>
+              style={{
+                textDecoration: "none",
+                display: "block",
+              }}
+            >
               <h2
                 style={{
                   fontSize: "1.25rem",
